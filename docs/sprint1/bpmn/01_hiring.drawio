@@ -1,148 +1,117 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Сторінка-1" id="9kdolFKsIcCdErQWrSGD">
-    <mxGraphModel dx="1212" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="Сторінка-1" id="g1atlr9FTBvUJuzy271N">
+    <mxGraphModel dx="1431" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;flowchart TD\n    subgraph Компанія\n        subgraph HR\n            start((Початок)) --&gt; create[Створити вакансію]\n            offer[Надіслати офер] --&gt; end1(((Успішний найм)))\n            reject[Надіслати відмову] --&gt; end2(((Процес завершено)))\n        end\n\n        subgraph Керівник\n            interview[Співбесіда]\n            xor{XOR}\n        end\n    end\n\n    subgraph Кандидат\n        apply[Подати резюме]\n    end\n\n    create -.-&gt; apply\n    apply -.-&gt; interview\n    interview --&gt; xor\n    xor --&gt;|Офер| offer\n    xor --&gt;|Відмова| reject&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="05DME6yF-MrmrkS2YO-o-1">
-          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
-            <mxGeometry as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Компанія" mermaidId="n:Компанія" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Компанія" id="05DME6yF-MrmrkS2YO-o-2">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="1105" width="793" x="279" y="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="HR" mermaidId="n:HR" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="HR" id="05DME6yF-MrmrkS2YO-o-3">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-2" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="1035" width="495" x="263" y="45" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Початок" mermaidId="n:start" mermaidBaseStyle="ellipse;html=1;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Початок" id="05DME6yF-MrmrkS2YO-o-4">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-3" style="ellipse;html=1;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="90" width="90" x="203" y="45" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Створити вакансію" mermaidId="n:create" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Створити вакансію" id="05DME6yF-MrmrkS2YO-o-5">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-3" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="54" width="199" x="148" y="185" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Надіслати офер" mermaidId="n:offer" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Надіслати офер" id="05DME6yF-MrmrkS2YO-o-6">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-3" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="54" width="178" x="282" y="728" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Успішний найм" mermaidId="n:end1" mermaidBaseStyle="ellipse;html=1;shape=doubleEllipse;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Успішний найм" id="05DME6yF-MrmrkS2YO-o-7">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-3" style="ellipse;html=1;shape=doubleEllipse;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="152" width="152" x="295" y="845" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Надіслати відмову" mermaidId="n:reject" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Надіслати відмову" id="05DME6yF-MrmrkS2YO-o-8">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-3" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="54" width="197" x="35" y="728" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Процес завершено" mermaidId="n:end2" mermaidBaseStyle="ellipse;html=1;shape=doubleEllipse;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Процес завершено" id="05DME6yF-MrmrkS2YO-o-9">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-3" style="ellipse;html=1;shape=doubleEllipse;aspect=fixed;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="178" width="178" x="45" y="832" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:start-&gt;create#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="05DME6yF-MrmrkS2YO-o-10">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-3" source="05DME6yF-MrmrkS2YO-o-4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-5">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:offer-&gt;end1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="05DME6yF-MrmrkS2YO-o-11">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-3" source="05DME6yF-MrmrkS2YO-o-6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-7">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:reject-&gt;end2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="05DME6yF-MrmrkS2YO-o-12">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-3" source="05DME6yF-MrmrkS2YO-o-8" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-9">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="Керівник" mermaidId="n:Керівник" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Керівник" id="05DME6yF-MrmrkS2YO-o-13">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-2" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="236" width="208" x="35" y="468" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Співбесіда" mermaidId="n:interview" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Співбесіда" id="05DME6yF-MrmrkS2YO-o-14">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-13" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="54" width="138" x="35" y="45" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="XOR" mermaidId="n:xor" mermaidBaseStyle="rhombus;html=1;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="XOR" id="05DME6yF-MrmrkS2YO-o-15">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-13" style="rhombus;html=1;strokeWidth=1;whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="62" width="62" x="73" y="149" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:interview-&gt;xor#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="05DME6yF-MrmrkS2YO-o-16">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-13" source="05DME6yF-MrmrkS2YO-o-14" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-15">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="Офер" mermaidId="e:xor-&gt;offer#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.79;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="Офер" id="05DME6yF-MrmrkS2YO-o-17">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-2" source="05DME6yF-MrmrkS2YO-o-15" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.79;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-6">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="171" y="704" />
-                <mxPoint x="634" y="739" />
-              </Array>
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="Відмова" mermaidId="e:xor-&gt;reject#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.13;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="Відмова" id="05DME6yF-MrmrkS2YO-o-18">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-2" source="05DME6yF-MrmrkS2YO-o-15" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.13;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-8">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="97" y="704" />
-                <mxPoint x="397" y="739" />
-              </Array>
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="Кандидат" mermaidId="n:Кандидат" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Кандидат" id="05DME6yF-MrmrkS2YO-o-19">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="124" width="244" x="30" y="344" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Подати резюме" mermaidId="n:apply" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Подати резюме" id="05DME6yF-MrmrkS2YO-o-20">
-          <mxCell parent="05DME6yF-MrmrkS2YO-o-19" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="54" width="174" x="35" y="45" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:create-&gt;apply#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.37;" mermaidBaseValue="" id="05DME6yF-MrmrkS2YO-o-21">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-1" source="05DME6yF-MrmrkS2YO-o-5" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=1;entryY=0.37;rounded=0;" target="05DME6yF-MrmrkS2YO-o-20">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="790" y="339" />
-                <mxPoint x="790" y="364" />
-              </Array>
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:apply-&gt;interview#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="05DME6yF-MrmrkS2YO-o-22">
-          <mxCell edge="1" parent="05DME6yF-MrmrkS2YO-o-1" source="05DME6yF-MrmrkS2YO-o-20" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="05DME6yF-MrmrkS2YO-o-14">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points">
-                <mxPoint x="152" y="468" />
-                <mxPoint x="418" y="493" />
-                <mxPoint x="418" y="518" />
-              </Array>
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
+        <mxCell id="cand_pool" parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Кандидат" vertex="1">
+          <mxGeometry height="240" width="240" x="20" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="apply" parent="cand_pool" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Подати резюме" vertex="1">
+          <mxGeometry height="54" width="170" x="35" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_doc" parent="cand_pool" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=bottom;fillColor=light-dark(#ffffff,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=14;" value="Резюме" vertex="1">
+          <mxGeometry height="80" width="70" x="85" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_resume" edge="1" parent="cand_pool" source="resume_doc" style="endArrow=none;dashed=1;dashPattern=2 3;html=1;strokeColor=light-dark(#333333,#cccccc);" target="apply" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_pool" parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Компанія" vertex="1">
+          <mxGeometry height="1260" width="860" x="280" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_mgr" parent="comp_pool" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Керівник" vertex="1">
+          <mxGeometry height="1200" width="230" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="interview" parent="lane_mgr" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Співбесіда" vertex="1">
+          <mxGeometry height="54" width="140" x="45" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="xor_fit" parent="lane_mgr" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=14;" value="Кандидат підходить?" vertex="1">
+          <mxGeometry height="90" width="140" x="45" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="e_int_xor" edge="1" parent="lane_mgr" source="interview" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="xor_fit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_hr" parent="comp_pool" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="HR" vertex="1">
+          <mxGeometry height="1200" width="360" x="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="lane_hr" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=15;" value="Початок" vertex="1">
+          <mxGeometry height="80" width="80" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="create" parent="lane_hr" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Створити вакансію" vertex="1">
+          <mxGeometry height="54" width="190" x="85" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e_start_create" edge="1" parent="lane_hr" source="start" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="create" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="reject" parent="lane_hr" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=15;" value="Надіслати відмову" vertex="1">
+          <mxGeometry height="54" width="155" x="15" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="end_reject" parent="lane_hr" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=14;" value="Процес завершено" vertex="1">
+          <mxGeometry height="100" width="100" x="42.5" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e_rej_end" edge="1" parent="lane_hr" source="reject" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="end_reject" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="offer" parent="lane_hr" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=15;" value="Надіслати офер" vertex="1">
+          <mxGeometry height="54" width="155" x="190" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="and_split" parent="lane_hr" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=28;fontStyle=1;" value="+" vertex="1">
+          <mxGeometry height="60" width="60" x="237.5" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="e_offer_and1" edge="1" parent="lane_hr" source="offer" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="and_split" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="lane_hr" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=15;" value="Створити картку" vertex="1">
+          <mxGeometry height="54" width="155" x="190" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e_and1_card" edge="1" parent="lane_hr" source="and_split" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="card" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="and_join" parent="lane_hr" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=28;fontStyle=1;" value="+" vertex="1">
+          <mxGeometry height="60" width="60" x="237.5" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="e_card_and2" edge="1" parent="lane_hr" source="card" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="and_join" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="onboarding" parent="lane_hr" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Онбординг" vertex="1">
+          <mxGeometry height="64" width="155" x="190" y="945" as="geometry" />
+        </mxCell>
+        <mxCell id="onboarding_plus" parent="onboarding" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;fontStyle=1;" value="+" vertex="1">
+          <mxGeometry height="20" width="20" x="67.5" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="e_and2_onb" edge="1" parent="lane_hr" source="and_join" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="onboarding" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end_hire" parent="lane_hr" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=14;" value="Успішний найм" vertex="1">
+          <mxGeometry height="100" width="100" x="217.5" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="e_onb_end" edge="1" parent="lane_hr" source="onboarding" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="end_hire" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin" parent="comp_pool" style="html=1;whiteSpace=wrap;strokeWidth=1;verticalAlign=top;fillColor=light-dark(#ffffde,#1f2020);strokeColor=light-dark(#aaaa33,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Адміністратор" vertex="1">
+          <mxGeometry height="1200" width="230" x="610" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="account" parent="lane_admin" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=15;" value="Створити обліковий запис" vertex="1">
+          <mxGeometry height="54" width="180" x="25" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xor_rej" edge="1" parent="comp_pool" source="xor_fit" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);fontSize=15;" target="reject" value="Відмова">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xor_off" edge="1" parent="comp_pool" source="xor_fit" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);fontSize=15;" target="offer" value="Офер">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_and1_acc" edge="1" parent="comp_pool" source="and_split" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="account" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_acc_and2" edge="1" parent="comp_pool" source="account" style="endArrow=block;endFill=1;html=1;strokeColor=light-dark(#333333,#cccccc);" target="and_join" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_create_apply" edge="1" parent="1" source="create" style="endArrow=block;endFill=1;dashed=1;dashPattern=2 3;html=1;strokeColor=light-dark(#333333,#cccccc);" target="apply" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_apply_int" edge="1" parent="1" source="apply" style="endArrow=block;endFill=1;dashed=1;dashPattern=2 3;html=1;strokeColor=light-dark(#333333,#cccccc);" target="interview" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
