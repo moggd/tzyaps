@@ -2,13 +2,13 @@
 **Команда:** Бригада С (Гавриш Роман, Дарнопих Артем, Микуляк Марко, Лебідь Антон)  
 **Продукт:** П3 «Персонал+» (демо-стенд: `https://opensource-demo.orangehrmlive.com`)  
 **Еталон вимог:** `SRS-1.1.md` (виправлена специфікація зі Спринту 2)  
-**Трекер дефектів:** https://github.com/moggd/tzyaps/issues?q=is%3Aissue%20label%3A%22sprint%3A3%22 (наявність issues/мітки перевірити після налаштування)
+**Трекер дефектів:** [GitHub Issues спринту 3](https://github.com/moggd/tzyaps/issues?q=is%3Aissue%20label%3A%22sprint%3A3%22). Оформлені картки: [BUG-001 / Issue #2](https://github.com/moggd/tzyaps/issues/2), [BUG-002 / Issue #1](https://github.com/moggd/tzyaps/issues/1).
 
 ## 1. Склад інкременту
 1. `README.md` — огляд інкременту, статистика прогону та матриця покриття вимог.
 2. `test-cases.xlsx` — реєстр тест-кейсів (аркуші `Test cases`, `Coverage`, `Review`).
 3. `execution-log.xlsx` — журнал виконання прогону Run 1 та опис тестового середовища (аркуші `Run 1`, `Environment`).
-4. `bug-reports.md` — історичні звіти Run 1; перевірка реальних GitHub Issues ще не завершена.
+4. `bug-reports.md` — реєстр звітів Run 1 з посиланнями на створені GitHub Issues для BUG-001 і BUG-002.
 5. `attachments/` — фактично надані скріншоти, не всі з них підтверджують заявлений дефект. Для BUG-007 файла немає.
 6. `evidence-review.md` — покрокова оцінка доказовості скріншотів; її потрібно враховувати перед повторною здачею.
 7. `task-board.md` — таблиця розподілу задач Спринту 3.

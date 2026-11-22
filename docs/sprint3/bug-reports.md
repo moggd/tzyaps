@@ -8,6 +8,8 @@
 > **ВАЖЛИВО ПЕРЕД ПОВТОРНОЮ ЗДАЧЕЮ:** BUG-006, BUG-007, BUG-008 та BUG-009 викладач визнав недостатньо обґрунтованими щодо SRS. Їх не можна подавати як доведені дефекти без нових тестів, посилання на вимоги та доказів. BUG-005 після декомпозиції TC-005 також потребує нового окремого кейсу й перевірки. Решта звітів так само потребують фактичних вкладень та перевірки відтворюваності.
 
 ### BUG-001
+**GitHub Issue:** [#2 — BUG-001](https://github.com/moggd/tzyaps/issues/2)  
+**Скріншот:** [BUG-001-1.png](https://github.com/moggd/tzyaps/blob/fix/sprint3-review/docs/sprint3/attachments/BUG-001-1.png)
 * **Title:** Recruitment: відсутня функція експорту активної вакансії у форматі XML (F-130)
 * **Labels:** `status:open`, `sprint:3`, `severity:major`, `priority:P2`
 * **Severity:** Major
@@ -36,6 +38,8 @@
 **Перевірка вкладення (22.11.2026):** Частково підтверджено. Сторінка Edit Vacancy для QA Engineer Middle, активна вакансія; видно RSS/Web і немає видимого XML-експорту. Job Title=Automation Tester, Hiring Manager=Timothy Lewis Amiano, тобто вхідні дані відрізняються від Run 1. Скріншот не доводить відсутність серверного XML-експорту поза цією сторінкою. Див. [evidence-review.md](evidence-review.md).
 
 ### BUG-002
+**GitHub Issue:** [#1 — BUG-002](https://github.com/moggd/tzyaps/issues/1)  
+**Скріншот:** [BUG-002-1.png](https://github.com/moggd/tzyaps/blob/fix/sprint3-review/docs/sprint3/attachments/BUG-002-1.png)
 * **Title:** Admin: поле Username приймає кириличні символи та підкреслення при створенні користувача (F-30)
 * **Labels:** `status:open`, `sprint:3`, `severity:major`, `priority:P3`
 * **Severity:** Major
