@@ -1,0 +1,35 @@
+{
+  "test_case_count": 30,
+  "execution_row_count": 30,
+  "statuses": {
+    "PASSED": 26,
+    "FAILED": 3,
+    "BLOCKED": 1
+  },
+  "simulation_cards": 9,
+  "severity": {
+    "Major": 3,
+    "Normal": 4,
+    "Minor": 2
+  },
+  "unique_test_case_ids": 30,
+  "images": 30,
+  "source": "SRS 1.1 branch fix/sprint3-review; reconstructed teaching cases",
+  "actual_demo_execution": false,
+  "human_review_signoffs": 0,
+  "actual_github_issues": 2,
+  "created_issues": 0,
+  "unmapped_requirements": [
+    "BL-10",
+    "BL-20",
+    "BL-40",
+    "BL-50",
+    "BL-60",
+    "BL-70",
+    "BL-80",
+    "P-10",
+    "P-20",
+    "D-10",
+    "D-20"
+  ]
+}
