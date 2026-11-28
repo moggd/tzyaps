@@ -56,17 +56,28 @@
           "value": ""
         },
         {
-          "id": "9bd1d651-e142-4c89-96be-35f4d572173f",
-          "comment": "",
           "command": "click",
           "target": "css=button[type=submit]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "dfb5bc08-c814-49f2-8efb-53be0f94f749",
           "targets": [
             [
               "css=button[type=submit]",
               "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()=' Login '])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Login')]",
+              "xpath:innerText"
             ]
           ],
-          "value": ""
+          "comment": "Натискання записано в Selenium IDE Desktop. Основний локатор уточнено."
         },
         {
           "id": "c0f4fca1-cb25-4a18-b4a8-dd92ac157dab",

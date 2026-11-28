@@ -7,7 +7,7 @@
 - [Спринт 3. Кейси, прогони і дефекти](docs/sprint3/README.md)
 - [Спринт 4. Автоматизовані перевірки](docs/sprint4/README.md)
 - [Спринт 5. Регресія та готовність](docs/sprint5/README.md)
-- [Команда і ротація](docs/team/charter.md)
+- [Команда і ротація](docs/team/charter.md) · [власні тести та рецензування](docs/team/participation.md)
 
 ## Відтворення автоматизованих перевірок
 

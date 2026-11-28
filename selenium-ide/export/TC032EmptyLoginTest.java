@@ -53,6 +53,7 @@ public class TC032EmptyLoginTest {
       List<WebElement> elements = driver.findElements(By.cssSelector("input[name=password][type=password]"));
       assert(elements.size() > 0);
     }
+    // Натискання записано в Selenium IDE Desktop. Основний локатор уточнено.
     driver.findElement(By.cssSelector("button[type=submit]")).click();
     {
       WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20));

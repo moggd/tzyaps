@@ -1,0 +1,27 @@
+(node:23951) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+info: Running test TC032 Empty Login
+info: ✓ TC032 Empty Login › open | /web/index.php/auth/login
+info: ✓ TC032 Empty Login › waitForElementVisible | name=username | 20000
+info: ✓ TC032 Empty Login › waitForElementVisible | name=password | 20000
+info: ✓ TC032 Empty Login › assertElementPresent | css=input[name=password][type=password]
+info: ✓ TC032 Empty Login › click | css=button[type=submit]
+info: ✕ TC032 Empty Login › waitForElementVisible | css=.oxd-input-field-error-message | 20000: Waiting for element to be visible Wait timed out after 20080ms during waitForElementVisible:css=.oxd-input-field-error-message:20000
+info: Finished test TC032 Empty Login Failure
+FAIL dist/main.test.js (24.516 s)
+  Running project Personal Plus
+    Running suite Personal Plus
+      ✕ Running test TC032 Empty Login (24324 ms)
+
+  ● Running project Personal Plus › Running suite Personal Plus › Running test TC032 Empty Login
+
+    TimeoutError: Waiting for element to be visible
+    Wait timed out after 20080ms during waitForElementVisible:css=.oxd-input-field-error-message:20000
+
+      at ../selenium-webdriver/lib/webdriver.js:941:22
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        24.651 s
+Ran all test suites within paths "/private/tmp/tzyaps-audit-ukhCXF/ui-tools/node_modules/selenium-side-runner/dist/main.test.js".

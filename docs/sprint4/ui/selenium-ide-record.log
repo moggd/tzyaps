@@ -1,0 +1,42 @@
+[2026-11-28 10:49:00.480] [info]  api: 'Resolved API Request' 'recorder.start' '63c4dce4-c651-453d-adf6-cc02e85ec048'
+[2026-11-28 10:49:00.495] [info]  api: 'Dispatch event' 'windows.onPlaybackWindowChanged' [ 3, { focused: true } ]
+[2026-11-28 10:49:05.537] [info]  api: 'Dispatch event' 'windows.onPlaybackWindowChanged' [
+  3,
+  {
+    title: 'OrangeHRM',
+    url: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
+  }
+]
+[2026-11-28 10:49:05.554] [info]  api: 'Received API Request' 'plugins.getPreloads' []
+[2026-11-28 10:49:05.554] [info]  api: 'Resolved API Request' 'plugins.getPreloads' []
+[2026-11-28 10:49:06.094] [info]  api: 'Received API Request' 'recorder.getFrameLocation' []
+[2026-11-28 10:49:06.096] [info]  api: 'Resolved API Request' 'recorder.getFrameLocation' 'root'
+[2026-11-28 10:49:06.097] [info]  api: 'Received API Request' 'recorder.getWinHandleId' []
+[2026-11-28 10:49:06.098] [info]  api: 'Resolved API Request' 'recorder.getWinHandleId' 'root'
+[2026-11-28 10:49:17.220] [info]  api: 'Received API Request' 'recorder.recordNewCommand' [
+  {
+    command: 'click',
+    target: [ [Array], [Array], [Array], [Array], [Array] ],
+    value: '',
+    insertBeforeLastCommand: false,
+    frameLocation: 'root',
+    winHandleId: 'root'
+  },
+  false
+]
+[2026-11-28 10:49:17.223] [info]  api: 'Dispatch event' 'state.onMutate' [
+  'recorder.recordNewCommand',
+  { params: [ [Object], false ], result: [ [Object] ] }
+]
+[2026-11-28 10:49:17.226] [info]  api: 'Resolved API Request' 'recorder.recordNewCommand' [
+  {
+    command: 'click',
+    target: 'css=[data-v-10d463b7]',
+    value: '',
+    insertBeforeLastCommand: false,
+    frameLocation: 'root',
+    winHandleId: 'root',
+    id: 'dfb5bc08-c814-49f2-8efb-53be0f94f749',
+    targets: [ [Array], [Array], [Array], [Array], [Array] ]
+  }
+]

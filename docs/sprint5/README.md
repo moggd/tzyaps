@@ -12,3 +12,5 @@
 - [Підсумковий аудит](final-audit.md)
 
 123 перевірки зіставлено по ID. У регресії 106 Passed, 15 Failed і 2 Blocked. Pass rate — 87,6%. Відкрита регресія MOD-008 і невиконаний поріг pass rate обґрунтовують No-Go для продукту.
+
+Окреме [відтворення сценарію Selenium IDE](ui/selenium-ide-recorded-replay.log) завершилось успішно. У 123 пари враховано браузерні кейси, JUnit і WebDriver.
