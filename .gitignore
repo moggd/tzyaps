@@ -1,1 +1,8 @@
 .DS_Store
+target/
+.idea/
+*.iml
+/_materials/
+/.qa-local/
+/src/main/java/ua/kpi/tzyapz/personal/
+*.xlsx.inspect.ndjson
