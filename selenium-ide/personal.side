@@ -1,0 +1,142 @@
+{
+  "id": "a9d270d1-0ac6-4329-b970-403c5a29c8c2",
+  "version": "2.0",
+  "name": "Personal Plus",
+  "url": "https://opensource-demo.orangehrmlive.com",
+  "tests": [
+    {
+      "id": "322b3f49-d897-427e-b395-654a5cda98a0",
+      "name": "TC032 Empty Login",
+      "commands": [
+        {
+          "id": "4a4326a5-ccf5-4441-9db2-be24af6291a2",
+          "comment": "",
+          "command": "open",
+          "target": "/web/index.php/auth/login",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "68f18ea9-5da3-41b1-8d3c-2f894b2ecb34",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "name=username",
+          "targets": [
+            [
+              "name=username",
+              "css:finder"
+            ]
+          ],
+          "value": "20000"
+        },
+        {
+          "id": "aa8baa61-8340-4d6f-9df2-8344ddc6886a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "name=password",
+          "targets": [
+            [
+              "name=password",
+              "css:finder"
+            ]
+          ],
+          "value": "20000"
+        },
+        {
+          "id": "33b48a1a-630f-4c88-bf15-dbc3544eba60",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=input[name=password][type=password]",
+          "targets": [
+            [
+              "css=input[name=password][type=password]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9bd1d651-e142-4c89-96be-35f4d572173f",
+          "comment": "",
+          "command": "click",
+          "target": "css=button[type=submit]",
+          "targets": [
+            [
+              "css=button[type=submit]",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c0f4fca1-cb25-4a18-b4a8-dd92ac157dab",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=.oxd-input-field-error-message",
+          "targets": [
+            [
+              "css=.oxd-input-field-error-message",
+              "css:finder"
+            ]
+          ],
+          "value": "20000"
+        },
+        {
+          "id": "8ca2e4e6-e3ee-40f5-bdcf-fc2a75ae7831",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.oxd-input-field-error-message",
+          "targets": [
+            [
+              "css=.oxd-input-field-error-message",
+              "css:finder"
+            ]
+          ],
+          "value": "Required"
+        },
+        {
+          "id": "1c7694d6-5edf-4a2a-b9bd-202403d9cb9b",
+          "comment": "",
+          "command": "verifyText",
+          "target": "xpath=(//span[normalize-space()=\"Required\"])[2]",
+          "targets": [
+            [
+              "xpath=(//span[normalize-space()=\"Required\"])[2]",
+              "css:finder"
+            ]
+          ],
+          "value": "Required"
+        },
+        {
+          "id": "1aba7d4a-b864-4237-980a-44d76faa8651",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "name=username",
+          "targets": [
+            [
+              "name=username",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "3f15e24c-402d-4c38-b0e5-b3ee7dcc3a0a",
+      "name": "Personal Plus",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 30,
+      "tests": [
+        "322b3f49-d897-427e-b395-654a5cda98a0"
+      ]
+    }
+  ],
+  "urls": [
+    "https://opensource-demo.orangehrmlive.com/"
+  ],
+  "plugins": []
+}

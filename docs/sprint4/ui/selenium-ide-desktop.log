@@ -1,0 +1,11 @@
+Витяг із журналу Selenium IDE Desktop. 28.11.2026.
+2026-11-28 10:29:03.053 open | '/web/index.php/auth/login' | '' | passed
+2026-11-28 10:29:04.105 waitForElementVisible | 'name=username' | '20000' | passed
+2026-11-28 10:29:04.126 waitForElementVisible | 'name=password' | '20000' | passed
+2026-11-28 10:29:04.137 assertElementPresent | 'css=input[name=password][type=password]' | '' | passed
+2026-11-28 10:29:04.197 click | 'css=button[type=submit]' | '' | passed
+2026-11-28 10:29:04.216 waitForElementVisible | 'css=.oxd-input-field-error-message' | '20000' | passed
+2026-11-28 10:29:04.233 assertText | 'css=.oxd-input-field-error-message' | 'Required' | passed
+2026-11-28 10:29:04.255 verifyText | 'xpath=(//span[normalize-space()="Required"])[2]' | 'Required' | passed
+2026-11-28 10:29:04.263 assertElementPresent | 'name=username' | '' | passed
+[2026-11-28 10:29:04.266] [debug] Playing state changed finished for test TC032 Empty Login
