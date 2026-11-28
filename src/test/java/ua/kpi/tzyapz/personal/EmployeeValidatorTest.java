@@ -67,4 +67,37 @@ class EmployeeValidatorTest {
         assertEquals(Set.of("EMAIL", "TAX_ID", "HIRE_DATE", "AGE"), Set.copyOf(codes));
         assertEquals(4, codes.size());
     }
+
+    @DisplayName("BL-80 · Локальна частина пошти не містить пробілів")
+    @Test
+    void rejectsSpaceInEmailLocalPart() {
+        assertFalse(employee.isValidEmail("qa team@example.test"));
+    }
+
+    @DisplayName("BL-80 · Повних шістнадцять років після переходу року")
+    @Test
+    void acceptsSixteenthBirthdayAcrossYears() {
+        LocalDate birth = LocalDate.of(2010, 12, 31);
+        LocalDate start = LocalDate.of(2027, 1, 1);
+
+        assertTrue(employee.isOldEnough(birth, start));
+    }
+
+    @DisplayName("BL-80 · Заборонена адреса і недостатній вік")
+    @Test
+    void returnsOnlyEmailAndAgeErrors() {
+        var errors = employee.validate("invalid", "0123456789", hire.minusYears(15), hire, hire);
+
+        assertEquals(2, errors.size());
+        assertEquals(Set.of("EMAIL", "AGE"), Set.copyOf(errors));
+    }
+
+    @DisplayName("BL-80 · РНОКПП і дата найму перевіряються незалежно")
+    @Test
+    void returnsOnlyTaxIdAndHireDateErrors() {
+        var errors = employee.validate("qa@example.test", "invalid", hire.minusYears(22), hire.plusDays(1), hire);
+
+        assertEquals(2, errors.size());
+        assertEquals(Set.of("TAX_ID", "HIRE_DATE"), Set.copyOf(errors));
+    }
 }

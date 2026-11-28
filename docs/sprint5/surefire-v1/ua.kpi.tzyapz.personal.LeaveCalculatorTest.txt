@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ua.kpi.tzyapz.personal.LeaveCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 27, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.068 s <<< FAILURE! -- in ua.kpi.tzyapz.personal.LeaveCalculatorTest
-ua.kpi.tzyapz.personal.LeaveCalculatorTest.accrualCapsAtTwentyFour(int, int)[6] -- Time elapsed: 0.004 s <<< FAILURE!
+Tests run: 31, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.081 s <<< FAILURE! -- in ua.kpi.tzyapz.personal.LeaveCalculatorTest
+ua.kpi.tzyapz.personal.LeaveCalculatorTest.accrualCapsAtTwentyFour(int, int)[6] -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <24> but was: <26>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -44,7 +44,7 @@ org.opentest4j.AssertionFailedError: expected: <24> but was: <26>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-ua.kpi.tzyapz.personal.LeaveCalculatorTest.countsWeekdaysInclusively(int, int, int)[1] -- Time elapsed: 0.001 s <<< FAILURE!
+ua.kpi.tzyapz.personal.LeaveCalculatorTest.countsWeekdaysInclusively(int, int, int)[1] -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <1> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -167,6 +167,32 @@ org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ua.kpi.tzyapz.personal.LeaveCalculatorTest.keepsAnnualCapAfterTwoYears -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <24> but was: <48>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ua.kpi.tzyapz.personal.LeaveCalculatorTest.keepsAnnualCapAfterTwoYears(LeaveCalculatorTest.java:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ua.kpi.tzyapz.personal.LeaveCalculatorTest.countsCalendarWeekdaysAcrossNewYear -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ua.kpi.tzyapz.personal.LeaveCalculatorTest.countsCalendarWeekdaysAcrossNewYear(LeaveCalculatorTest.java:84)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 

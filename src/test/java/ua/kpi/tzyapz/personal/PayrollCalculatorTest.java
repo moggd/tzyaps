@@ -67,4 +67,41 @@ class PayrollCalculatorTest {
             () -> assertThrows(IllegalArgumentException.class, () -> payroll.overtimePay(null, BigDecimal.ONE))
         );
     }
+
+    @DisplayName("BL-50 · Половина копійки в сумі після утримань")
+    @Test
+    void roundsNetUpAtHalfCent() {
+        BigDecimal gross = new BigDecimal("33.50");
+
+        // MOD-003: 33,50 × 0,77 = 25,795.
+        assertEquals(new BigDecimal("25.80"), payroll.net(gross));
+    }
+
+    @DisplayName("BL-60 · Округлення точної половини копійки в ставці")
+    @Test
+    void roundsHourlyHalfCentUp() {
+        BigDecimal monthly = new BigDecimal("9.24");
+
+        // MOD-004: 9,24 / 168 = 0,055.
+        assertEquals(new BigDecimal("0.06"), payroll.hourlyRate(monthly));
+    }
+
+    @DisplayName("BL-70 · У проміжному добутку використовується округлена ставка")
+    @Test
+    void usesHalfUpHourlyRateInOvertime() {
+        BigDecimal monthly = new BigDecimal("2.52");
+        BigDecimal hours = new BigDecimal("10");
+
+        // MOD-004: 2,52 / 168 = 0,015 → 0,02, далі 0,02 × 1,5 × 10 = 0,30.
+        assertEquals(new BigDecimal("0.30"), payroll.overtimePay(monthly, hours));
+    }
+
+    @DisplayName("BL-70 · Половина копійки у фінальній оплаті")
+    @Test
+    void roundsFractionalOvertimeUpAtHalfCent() {
+        BigDecimal monthly = new BigDecimal("1680.00");
+        BigDecimal hours = new BigDecimal("0.125");
+
+        assertEquals(new BigDecimal("1.88"), payroll.overtimePay(monthly, hours));
+    }
 }

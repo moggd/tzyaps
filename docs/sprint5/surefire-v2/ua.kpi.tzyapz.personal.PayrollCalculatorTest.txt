@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: ua.kpi.tzyapz.personal.PayrollCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 22, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in ua.kpi.tzyapz.personal.PayrollCalculatorTest
+Tests run: 26, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! -- in ua.kpi.tzyapz.personal.PayrollCalculatorTest
 ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyRate(BigDecimal, BigDecimal)[3] -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <0.01> but was: <0.00>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
@@ -44,7 +44,7 @@ org.opentest4j.AssertionFailedError: expected: <0.01> but was: <0.00>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyRate(BigDecimal, BigDecimal)[4] -- Time elapsed: 0 s <<< FAILURE!
+ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyRate(BigDecimal, BigDecimal)[4] -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <0.01> but was: <0.00>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -86,7 +86,7 @@ org.opentest4j.AssertionFailedError: expected: <0.01> but was: <0.00>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyRate(BigDecimal, BigDecimal)[6] -- Time elapsed: 0.001 s <<< FAILURE!
+ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyRate(BigDecimal, BigDecimal)[6] -- Time elapsed: 0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <148.81> but was: <148.80>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -135,6 +135,32 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at ua.kpi.tzyapz.personal.PayrollCalculatorTest.rejectsGrossAboveLimit(PayrollCalculatorTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyHalfCentUp -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0.06> but was: <0.05>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ua.kpi.tzyapz.personal.PayrollCalculatorTest.roundsHourlyHalfCentUp(PayrollCalculatorTest.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ua.kpi.tzyapz.personal.PayrollCalculatorTest.usesHalfUpHourlyRateInOvertime -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0.30> but was: <0.15>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at ua.kpi.tzyapz.personal.PayrollCalculatorTest.usesHalfUpHourlyRateInOvertime(PayrollCalculatorTest.java:96)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)

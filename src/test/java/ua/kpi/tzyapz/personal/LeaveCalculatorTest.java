@@ -60,4 +60,34 @@ class LeaveCalculatorTest {
     void requiresPositiveDurationWithinBalance(int balance, int days, boolean expected) {
         assertEquals(expected, leave.canRequest(balance, days));
     }
+
+    @DisplayName("BL-10 · Два роки стажу зберігають річну стелю")
+    @Test
+    void keepsAnnualCapAfterTwoYears() {
+        // MOD-001: річний ліміт діє для будь-якого додатного стажу.
+        assertEquals(24, leave.accrued(24));
+    }
+
+    @DisplayName("BL-20 · Перенесений залишок не перевищує п’ять днів")
+    @Test
+    void capsFullUnusedAnnualAllowance() {
+        assertEquals(5, leave.carryOver(24));
+    }
+
+    @DisplayName("BL-30 · Перехід року і святковий будній день")
+    @Test
+    void countsCalendarWeekdaysAcrossNewYear() {
+        // MOD-002: 01.01.2027 є п’ятницею. Окремого календаря свят у правилі немає.
+        LocalDate thursday = LocalDate.of(2026, 12, 31);
+        LocalDate friday = LocalDate.of(2027, 1, 1);
+
+        assertEquals(2, leave.durationDays(thursday, friday));
+    }
+
+    @DisplayName("BL-40 · Заявка на єдиний доступний день")
+    @Test
+    void allowsMinimumDurationWithExactBalance() {
+        // MOD-008: обидві межі включно, навіть якщо баланс дорівнює одному дню.
+        assertTrue(leave.canRequest(1, 1));
+    }
 }
