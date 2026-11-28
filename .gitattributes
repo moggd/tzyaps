@@ -1,0 +1,2 @@
+*.pdf binary
+docs/sprint5/surefire-*/*.txt whitespace=-blank-at-eof

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ua.kpi.tzyapz.personal.ui.OrangeHrmUiTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.26 s -- in ua.kpi.tzyapz.personal.ui.OrangeHrmUiTest
