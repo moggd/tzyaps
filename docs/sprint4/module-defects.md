@@ -11,3 +11,5 @@
 | MOD-005 · BL-80 | EmployeeValidatorTest#requiresTenTaxIdDigits, 012345678 | false | true | Major / P2. До картки може пройти неповний РНОКПП. |
 | MOD-006 · BL-80 | EmployeeValidatorTest#requiresFullSixteenYears, народження 07.09.2010, найм 06.09.2026 | false | true | Major / P2. Перевірка пропускає найм до досягнення вікової межі. |
 | MOD-007 · BL-50 (1.1) | PayrollCalculatorTest#rejectsGrossAboveLimit, 10 000 000,01 грн | IllegalArgumentException | Обчислення завершилося без винятку | Major / P2. Модуль обчислює виплату за межами явно встановленого діапазону. |
+
+Додаткові незалежні приклади з персональних класів відтворили MOD-002 і MOD-003 на v1. Обидва пройшли на v2. [Результати за класами](../team/individual-junit.md)
